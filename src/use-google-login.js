@@ -19,6 +19,7 @@ const useGoogleLogin = ({
   discoveryDocs,
   uxMode,
   scope,
+  pluginName,
   accessType,
   responseType,
   jsSrc = 'https://apis.google.com/js/api.js',
@@ -90,6 +91,7 @@ const useGoogleLogin = ({
           ux_mode: uxMode,
           redirect_uri: redirectUri,
           scope,
+          plugin_name: pluginName,
           access_type: accessType
         }
 

@@ -82,6 +82,7 @@ const { signIn, loaded } = useGoogleLogin({
     onFailure,
     uxMode,
     scope,
+    pluginName,
     accessType,
     responseType,
     jsSrc,
@@ -105,6 +106,7 @@ const { signOut, loaded } = useGoogleLogout({
     uxMode,
     redirectUri,
     scope,
+    pluginName,
     accessType,
     onLogoutSuccess
   })
@@ -143,6 +145,7 @@ Use GoogleLogout button to logout the user from google.
 |    jsSrc     |  string  |https://apis.google.com/js/api.js|URL of the Javascript file normally hosted by Google|
 | hostedDomain |  string  |                   -                  |The G Suite domain to which users must belong to sign in|
 |     scope    |  string  |             profile email            |                  |
+|  pluginName  |  string  |             ''                       | Required for client IDs created before July 29th, 2022 to enable use of the Google Platform Library. |
 | responseType |  string  |              permission              | Can be either space-delimited 'id_token', to retrieve an ID Token + 'permission' (or 'token'), to retrieve an Access Token, or 'code', to retrieve an Authorization Code.
 | accessType   |  string  |              online                  | Can be either 'online' or 'offline'. Use offline with responseType 'code' to retrieve an authorization code for fetching a refresh token  |
 |   onSuccess  | function |               REQUIRED               |                  |
@@ -178,6 +181,7 @@ Google Scopes List: [scopes](https://developers.google.com/identity/protocols/go
 |    jsSrc     |  string  | https://apis.google.com/js/api.js | URL of the Javascript file normally hosted by Google |
 | hostedDomain |  string  |                   -                  | The G Suite domain to which users must belong to sign in |
 |     scope    |  string  |             profile email            |                  |
+|  pluginName  |  string  |             ''                       | Required for client IDs created before July 29th, 2022 to enable use of the Google Platform Library. |
 | accessType   |  string  |              online                  | Can be either 'online' or 'offline'. Use offline with responseType 'code' to retrieve an authorization code for fetching a refresh token |
 |   onLogoutSuccess  | function |               REQUIRED               |                  |
 |   onFailure  | function |               REQUIRED               |                  |

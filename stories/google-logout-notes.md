@@ -74,6 +74,7 @@ Use GoogleLogout button to logout the user from google.
 |    jsSrc     |  string  | https://apis.google.com/js/api.js | URL of the Javascript file normally hosted by Google |
 | hostedDomain |  string  |                   -                  |  The G Suite domain to which users must belong to sign in |
 |     scope    |  string  |             profile email            |                  |
+|  pluginName  |  string  |             ''                       | Required for client IDs created before July 29th, 2022 to enable use of the Google Platform Library. |
 | accessType   |  string  |              online                  | Can be either 'online' or 'offline'. Use offline with responseType 'code' to retrieve a refresh token |
 |   onLogoutSuccess  | function |               REQUIRED               |                  |
 |   onFailure  | function |               REQUIRED               |                  |

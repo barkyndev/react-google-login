@@ -60,6 +60,7 @@ If you use the hostedDomain param, make sure to validate the id_token (a JSON we
 |    jsSrc     |  string  | https://apis.google.com/js/api.js |URL of the Javascript file normally hosted by Google|
 | hostedDomain |  string  |                   -                  | The G Suite domain to which users must belong to sign in|
 |     scope    |  string  |             profile email            |                  |
+|  pluginName  |  string  |             ''                       | Required for client IDs created before July 29th, 2022 to enable use of the Google Platform Library. |
 | responseType |  string  |              permission              | Can be either space-delimited 'id_token', to retrieve an ID Token + 'permission' (or 'token'), to retrieve an Access Token, or 'code', to retrieve an Authorization Code.
 | accessType   |  string  |              online                  | Can be either 'online' or 'offline'. Use offline with responseType 'code' to retrieve a refresh token |
 |   onSuccess  | function |               REQUIRED               |                  |

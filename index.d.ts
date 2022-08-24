@@ -81,6 +81,7 @@ export interface GoogleLoginProps {
   readonly jsSrc?: string,
   readonly buttonText?: string,
   readonly scope?: string,
+  readonly pluginName?: string,
   readonly className?: string,
   readonly redirectUri?: string,
   readonly cookiePolicy?: string,
@@ -145,6 +146,7 @@ export interface UseGoogleLogoutProps {
   readonly redirectUri?: string,
   readonly discoveryDocs?: any;
   readonly scope?: string,
+  readonly pluginName?: string,
   readonly uxMode?: string;
   readonly jsSrc?: string;
 }
@@ -165,6 +167,7 @@ export interface UseGoogleLoginProps {
   readonly jsSrc?: string,
   readonly onRequest?: () => void,
   readonly scope?: string,
+  readonly pluginName?: string,
   readonly redirectUri?: string,
   readonly cookiePolicy?: string,
   readonly loginHint?: string,

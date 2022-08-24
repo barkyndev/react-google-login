@@ -30,6 +30,7 @@ const GoogleLogout = props => {
     onScriptLoadFailure,
     uxMode,
     scope,
+    pluginName,
     accessType,
     jsSrc
   } = props
@@ -47,6 +48,7 @@ const GoogleLogout = props => {
     uxMode,
     redirectUri,
     scope,
+    pluginName,
     accessType,
     onLogoutSuccess
   })
